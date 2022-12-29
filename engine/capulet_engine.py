@@ -1,9 +1,9 @@
-from abc import ABC
-
-from car import Car
 
 
-class CapuletEngine(Car, ABC):
+from engine.engine import Engine
+
+
+class CapuletEngine(Engine):
     def __init__(self, current_mileage, last_service_mileage):
         
         self.current_mileage = current_mileage
